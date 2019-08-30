@@ -3,14 +3,9 @@
  * @Author: garryfang 
  * @Date: 2019-08-30 21:39:18 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-08-30 21:55:38
+ * @Last Modified time: 2019-08-30 21:58:04
  */
-
-struct ListNode
-{
-    int value;
-    ListNode *next;
-};
+#include "ListNode.h"
 
 ListNode *findKthToTail(ListNode *head, unsigned int k)
 {
