@@ -3,7 +3,7 @@
  * @Author: garryfang 
  * @Date: 2019-08-30 21:39:18 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-08-30 21:53:40
+ * @Last Modified time: 2019-08-30 21:55:38
  */
 
 struct ListNode
@@ -14,6 +14,8 @@ struct ListNode
 
 ListNode *findKthToTail(ListNode *head, unsigned int k)
 {
+    if (!head)
+        return nullptr;
     ListNode *left = head, *right = head;
     while (k > 0)
     {
