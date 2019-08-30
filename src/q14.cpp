@@ -1,3 +1,10 @@
+/*
+ * 剪绳子
+ * @Author: garryfang 
+ * @Date: 2019-08-30 21:22:55 
+ * @Last Modified by: garryfang
+ * @Last Modified time: 2019-08-30 21:33:19
+ */
 #include <iostream>
 #include <cmath>
 
