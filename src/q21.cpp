@@ -8,7 +8,7 @@
 #include <functional>
 #include <vector>
 
-void Reorder(std::vector<int> &data, std::function<bool(int)> is_front)
+void reorder(std::vector<int> &data, std::function<bool(int)> is_front)
 {
     if (data.empty())
         return;
