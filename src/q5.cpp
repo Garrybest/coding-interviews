@@ -3,7 +3,7 @@
  * @Author: garryfang 
  * @Date: 2019-08-31 11:17:35 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-08-31 11:55:45
+ * @Last Modified time: 2019-08-31 14:53:30
  */
 
 void replaceBlank(char string[], int length)
@@ -11,7 +11,7 @@ void replaceBlank(char string[], int length)
     if (!string || length <= 0)
         return;
     int origin_string_length(0), new_string_length(0);
-    for (size_t i = 0; string[i] != '\0'; ++i)
+    for (int i = 0; string[i] != '\0'; ++i)
     {
         if (string[i] == ' ')
             new_string_length += 3;
