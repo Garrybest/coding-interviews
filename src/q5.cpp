@@ -1,8 +1,9 @@
 /*
+ * 替换空格
  * @Author: garryfang 
  * @Date: 2019-08-31 11:17:35 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-08-31 11:54:50
+ * @Last Modified time: 2019-08-31 11:55:45
  */
 
 void replaceBlank(char string[], int length)
