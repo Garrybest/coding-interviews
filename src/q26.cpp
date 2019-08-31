@@ -1,8 +1,9 @@
 /*
+ * 树的子结构
  * @Author: garryfang 
  * @Date: 2019-08-31 09:46:00 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-08-31 10:23:38
+ * @Last Modified time: 2019-08-31 10:26:08
  */
 #include "BinaryTreeNode.h"
 
