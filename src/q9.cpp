@@ -1,8 +1,9 @@
 /*
+ * 用两个栈实现队列
  * @Author: garryfang 
  * @Date: 2019-09-02 10:03:49 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-09-02 10:25:32
+ * @Last Modified time: 2019-09-02 10:47:58
  */
 #include <stack>
 #include <stdexcept>
