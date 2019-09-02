@@ -3,14 +3,12 @@
  * @Author: garryfang 
  * @Date: 2019-09-02 10:54:05 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-09-02 11:07:29
+ * @Last Modified time: 2019-09-02 22:06:34
  */
 #include <stdexcept>
 
 uint64_t fibonacci(unsigned int n)
 {
-    if (n < 0)
-        throw std::invalid_argument("Invalid input.");
     if (n == 0)
         return 0;
     if (n == 1)
