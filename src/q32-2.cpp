@@ -3,37 +3,37 @@
  * @Author: garryfang 
  * @Date: 2019-09-04 19:13:00 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-09-04 19:34:51
+ * @Last Modified time: 2019-09-04 19:45:24
  */
 
 #include <iostream>
-#include <stack>
+#include <queue>
 #include "BinaryTreeNode.h"
 
 void print(BinaryTreeNode *root)
 {
     if (!root)
         return;
-    std::stack<BinaryTreeNode *> stack;
-    stack.push(root);
+    std::queue<BinaryTreeNode *> queue;
+    queue.push(root);
 
     unsigned cnt(1);
 
-    while (!stack.empty())
+    while (!queue.empty())
     {
-        BinaryTreeNode *node = stack.top();
+        BinaryTreeNode *node = queue.front();
         std::cout << node->value << " ";
 
-        stack.pop();
+        queue.pop();
 
         if (node->left)
-            stack.push(node->left);
+            queue.push(node->left);
         if (node->right)
-            stack.push(node->right);
+            queue.push(node->right);
 
         if (--cnt == 0)
         {
-            cnt = stack.size();
+            cnt = queue.size();
             std::cout << std::endl;
         }
     }
