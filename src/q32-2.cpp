@@ -3,14 +3,14 @@
  * @Author: garryfang 
  * @Date: 2019-09-04 19:13:00 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-09-04 19:45:24
+ * @Last Modified time: 2019-09-04 20:02:00
  */
 
 #include <iostream>
 #include <queue>
 #include "BinaryTreeNode.h"
 
-void print(BinaryTreeNode *root)
+void printInLineBreak(BinaryTreeNode *root)
 {
     if (!root)
         return;
