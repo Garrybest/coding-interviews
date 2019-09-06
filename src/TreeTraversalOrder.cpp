@@ -13,7 +13,7 @@
 void preOrder(BinaryTreeNode *root)
 {
     std::stack<BinaryTreeNode *> stack;
-    BinaryTreeNode *p;
+    BinaryTreeNode *p = root;
     while (p || !stack.empty())
     {
         while (p)
