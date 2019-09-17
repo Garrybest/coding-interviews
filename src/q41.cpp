@@ -57,15 +57,3 @@ public:
         return median;
     }
 };
-
-int main()
-{
-    std::vector<double> v{2, 1, 3, 4, 5, 3, 1, 9};
-    DynamicArray<double> array;
-    for (auto &&i : v)
-        array.insert(i);
-
-    std::cout << array.getMedian() << std::endl;
-
-    return 0;
-}
