@@ -3,7 +3,7 @@
  * @Author: garryfang 
  * @Date: 2019-09-20 12:48:50 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-09-20 14:19:03
+ * @Last Modified time: 2019-09-20 14:20:05
  */
 
 #include <string>
@@ -26,12 +26,4 @@ void reverse(std::string &s)
             ++r;
         std::reverse(l, r);
     }    
-}
-
-int main()
-{
-    std::string s("     I am a student.    ");
-    reverse(s);
-    std::cout << s << std::endl;
-    return 0;
 }
