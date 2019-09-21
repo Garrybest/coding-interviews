@@ -3,13 +3,13 @@
  * @Author: garryfang 
  * @Date: 2019-09-21 15:21:40 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-09-21 15:43:11
+ * @Last Modified time: 2019-09-21 20:44:24
  */
 
 #include <BinaryTreeNode.h>
 
 BinaryTreeNode *ans = nullptr;
-int idx = 0;
+unsigned idx = 0;
 
 void getNumberSameAsIndexCore(BinaryTreeNode *root, const unsigned num)
 {

@@ -12,7 +12,6 @@
 int getNumberOfKBegin(std::vector<int> &nums, int k)
 {
     int l = 0, r = nums.size() - 1;
-    int ans = 0;
     while (l < r)
     {
         int m = (l + r) / 2;
@@ -29,7 +28,6 @@ int getNumberOfKBegin(std::vector<int> &nums, int k)
 int getNumberOfKEnd(std::vector<int> &nums, int k)
 {
     int l = 0, r = nums.size() - 1;
-    int ans = 0;
     while (l < r)
     {
         int m = (l + r + 1) / 2;
