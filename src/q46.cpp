@@ -3,7 +3,7 @@
  * @Author: garryfang 
  * @Date: 2019-09-24 16:39:50 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-09-24 17:18:01
+ * @Last Modified time: 2019-09-24 17:19:13
  */
 
 #include <vector>
@@ -25,10 +25,4 @@ int getTranslationCount(const std::string &s)
         dp[i] = cnt;
     }
     return dp[0];
-}
-
-int main()
-{
-    std::string s("12258");
-    std::cout << getTranslationCount(s) << std::endl;
 }
