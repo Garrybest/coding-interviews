@@ -3,17 +3,17 @@
  * @Author: garryfang 
  * @Date: 2019-09-23 21:46:52 
  * @Last Modified by: garryfang
- * @Last Modified time: 2019-09-23 22:09:30
+ * @Last Modified time: 2019-09-24 17:06:53
  */
 
 #include <string>
 #include <unordered_map>
 
-int longestSubstringWithoutDuplication(const std::string &str)
+unsigned longestSubstringWithoutDuplication(const std::string &str)
 {
-    int i = 0, j = 0;
-    int ans = 0;
-    std::unordered_map<char, int> map;
+    unsigned i = 0, j = 0;
+    unsigned ans = 0;
+    std::unordered_map<char, unsigned> map;
     while (j < str.length())
     {
         char c = str[j];
