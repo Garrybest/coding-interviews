@@ -8,22 +8,32 @@
 
 #include "ListNode.h"
 
-void deleteNode(ListNode *&head, ListNode *deleted_node)
+void deleteNode(ListNode *&head, ListNode *pToBeDeleted)
 {
-    if (!head || !deleted_node)
+    if (!head || !pToBeDeleted)
         return;
-    ListNode *node = head;
-    while (node && node != deleted_node)
-        node = node->next;
-    if (node == nullptr)
-        return;
-    if (node == head)
+    if (pToBeDeleted->next)
     {
-        head = head->next;
-        delete node;
+        ListNode *temp = pToBeDeleted->next;
+        pToBeDeleted->value = pToBeDeleted->next->value;
+        pToBeDeleted->next = pToBeDeleted->next->next;
+        delete temp;
+    }
+    else if (head == pToBeDeleted)
+    {
+        delete pToBeDeleted;
+        head = nullptr;
+        pToBeDeleted = nullptr;
     }
     else
     {
-        
+        ListNode *node = head;
+        while (node && node->next != pToBeDeleted)
+            node = node->next;
+        if (!node)
+            return;
+        delete pToBeDeleted;
+        node->next = nullptr;
+        pToBeDeleted = nullptr;
     }
 }
